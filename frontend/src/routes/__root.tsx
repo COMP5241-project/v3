@@ -42,7 +42,7 @@ function RootComponent() {
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
           <Link to="/" className="font-semibold tracking-tight text-slate-950">
-            Shiny Learning
+            COMP5241 Project - Group 5
           </Link>
           <nav className="flex items-center gap-5 text-sm font-medium text-slate-600">
             <Link to="/" className="hover:text-indigo-700">
