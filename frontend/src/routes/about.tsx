@@ -57,6 +57,38 @@ function RouteComponent() {
         </p>
       </header>
 
+      <section aria-labelledby="stack-heading" className="mt-12">
+        <h2 id="stack-heading" className="text-xl font-semibold text-slate-950">
+          Technology stack
+        </h2>
+        <dl className="mt-5 grid gap-x-8 gap-y-5 border-y border-slate-200 py-5 sm:grid-cols-2">
+          <div>
+            <dt className="text-sm font-semibold text-slate-900">Frontend</dt>
+            <dd className="mt-1 leading-7 text-slate-600">
+              React, TypeScript, Vite, and Tailwind CSS
+            </dd>
+          </div>
+          <div>
+            <dt className="text-sm font-semibold text-slate-900">Backend</dt>
+            <dd className="mt-1 leading-7 text-slate-600">
+              Python and FastAPI
+            </dd>
+          </div>
+          <div>
+            <dt className="text-sm font-semibold text-slate-900">Database</dt>
+            <dd className="mt-1 leading-7 text-slate-600">Supabase</dd>
+          </div>
+          <div>
+            <dt className="text-sm font-semibold text-slate-900">
+              AI and deployment
+            </dt>
+            <dd className="mt-1 leading-7 text-slate-600">
+              Deepseek for content generation, deployed with Vercel
+            </dd>
+          </div>
+        </dl>
+      </section>
+
       <section aria-labelledby="journey-heading" className="mt-14">
         <h2
           id="journey-heading"
