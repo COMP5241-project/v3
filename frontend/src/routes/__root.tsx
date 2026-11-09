@@ -51,6 +51,9 @@ function RootComponent() {
             <Link to="/my-learning" className="hover:text-indigo-700">
               My learning
             </Link>
+            <Link to="/about" className="hover:text-indigo-700">
+              About
+            </Link>
             {profile.data ? (
               <>
                 <span className="hidden text-slate-500 sm:inline">
