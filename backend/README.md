@@ -1,5 +1,24 @@
 # Backend
 
+## Vercel deployment
+
+Import the repository as a Vercel project with the project root set to the
+repository root. The root `vercel.json` routes `/api/` requests to the FastAPI
+service and other requests to the Vite frontend. The frontend calls the API
+from the browser using same-origin URLs; neither service makes server-side
+calls to the other, so no service bindings are configured. The backend's `/`
+and `/health` endpoints are not exposed by these public rewrites.
+
+Configure `SUPABASE_URL`, `SUPABASE_KEY`, `SESSION_SECRET`, and the selected AI
+provider's environment variables in Vercel for each deployment environment.
+See `../.env.example` for the supported provider settings. Set `APP_ENV` to a
+value other than `development` for deployed environments so session cookies
+are marked secure. Keep server secrets out of frontend variables.
+
+From the repository root, run `npx vercel dev --local` to test both services
+without linking a project, or `npx vercel dev` to use a linked project's
+settings. Supply the backend environment variables locally before starting.
+
 ## Supabase setup
 
 Apply the SQL files in `../migrations` in numeric order to the Supabase project.
